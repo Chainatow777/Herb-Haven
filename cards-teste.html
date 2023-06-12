@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TESTE - Herb Haven</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1d24;
+            display: grid;
+            place-content: center;
+            height: 100%;
+        }
+
+        .container {
+            display: grid;
+            place-content: center;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .card {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            place-content: center;
+            width: 250px;
+            height: 250px;
+            color: #BFC0C0;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 10px;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .card--1 {
+            background-image: url('img/produto-00.png');
+        }
+
+        .card--2 {
+            background-image: url('img/7971.jpg');
+        }
+
+        .card--3 {
+            background-image: url('img/cannabis-marijuana-leaf-closeup.jpg');
+        }
+
+
+        .card::before,
+        .card::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            z-index: -1;
+            width: 100%;
+            height: calc(60% + 35px);
+            background-color: #BFC0C0;
+            transition: transform 0.5s 0.25s;
+        }
+
+        .card::before {
+            top: 0;
+            clip-path: polygon(0 0, 100% 0, 100% 45%, 0% 100%);
+            transform: translateY(-100%);
+        }
+
+        .card::after {
+            bottom: 0;
+            clip-path: polygon(0 55%, 100% 0, 100% 100%, 0% 100%);
+            transform: translateY(100%);
+        }
+
+        .card__body {
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+
+        .card__body p {
+            text-align: justify;
+            color: black;
+        }
+
+        .card__title {
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 22pt;
+            color: #00241B;
+            margin-bottom: 15px;
+        }
+
+        .card:hover::before,
+        .card:hover::after {
+            transform: translateY(0);
+        }
+
+        .card:hover .card__body {
+            opacity: 1;
+            transition-delay: 0.75s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <article class="card card--1">
+            <div class="card__body">
+                <h2 class="card__title">Card 1</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                    reprehenderit! Neque consequatur velit...
+                </p>
+            </div>
+        </article>
+
+        <article class="card card--2">
+            <div class="card__body">
+                <h2 class="card__title">Card 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                    reprehenderit! Neque consequatur velit...
+                </p>
+            </div>
+        </article>
+
+        <article class="card card--3">
+            <div class="card__body">
+                <h2 class="card__title">Card 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
+                    reprehenderit! Neque consequatur velit...
+                </p>
+            </div>
+        </article>
+
+    </div>
+</body>
+
+</html>
