@@ -12,7 +12,7 @@ Este é um projeto de site chamado "Herb Haven - Produção" desenvolvido em HTM
 - O arquivo principal é "index.html", que contém o código HTML da página.
 - A pasta "css" contém o arquivo "style.css", que contém os estilos CSS utilizados no site.
 - A pasta "fontawesome-free-6.4.0-web" contém os arquivos necessários para a biblioteca de ícones Font Awesome.
-- A pasta "img" contém uma imagem utilizada no site.
+- A pasta "img" contém as imagens utilizadas no site.
 - O arquivo "script.js" contém código JavaScript que adiciona funcionalidades interativas ao site.
 
 ## Dependências
@@ -36,8 +36,6 @@ Certifique-se de incluir essas dependências corretamente no seu projeto para ga
 
 - Este projeto foi desenvolvido com base nas informações fornecidas e pode ser necessário ajustar o código ou as dependências para atender às necessidades específicas do seu ambiente.
 - Certifique-se de incluir corretamente as dependências externas mencionadas anteriormente, como os links para os arquivos CSS e JavaScript, para garantir o correto funcionamento do site.
-
-Espero que este resumo do código e o arquivo README sejam úteis! Se você tiver mais dúvidas, sinta-se à vontade para perguntar.
 
 ## Imagens do projeto
 
