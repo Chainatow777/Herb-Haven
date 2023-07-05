@@ -21,13 +21,13 @@ body {
 
 @font-face {
   font-family: 'DoubleBass';
-  src: url('/font/doublebass/DoubleBass-Bold-trial.ttf');
+  src: url('../font/doublebass/DoubleBass-Bold-trial.ttf');
 }
 
 /* index css inicio */
 
 #div1 {
-  background-image: url('/img/img01.jpg');
+  background-image: url('../img/bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -225,7 +225,7 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  background-image: url('/img/img02.jpg');
+  background-image: url('../img/img01.jpg');
   background-size: cover;
   color: white;
   display: flex;
@@ -252,7 +252,7 @@ body {
 }
 
 #div2 {
-  background-image: url('/img/img01.jpg');
+  background-image: url('../img/bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -350,7 +350,7 @@ body {
   left: 0;
   top: 0;
   background-color: black;
-  background-image: url('/img/img03.jpg');
+  background-image: url('../img/Herb\ Haven.png');
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -612,7 +612,7 @@ input[type='file'] {
 }
 
 .bg-image {
-  background-image: url('img/7971.jpg');
+  background-image: url('../img/bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -757,22 +757,6 @@ input[type='file'] {
 }
 
 /* login usuario cadastrado fim */
-
-#div4 {
-  background-color: yellow;
-}
-
-#div3 {
-  background-color: #000000;
-}
-
-#div5 {
-  background-color: #9c27b0;
-}
-
-#div6 {
-  background-color: #71d400;
-}
 
 /* formatação geral das divs inicio*/
 
